@@ -2,13 +2,7 @@ const Sequelize = require('sequelize');
 const account = require('./model/account');
 
 const sequelize = new Sequelize(
-    "mrjo",              // 데이터베이스 이름
-    "sago",          // 유저 명
-    "sagosagosago",          // 비밀번호
-    {
-        'host': "sago-2.c6mnzwpnzomg.ap-northeast-2.rds.amazonaws.com",
-        'dialect': 'mysql'
-    }
+    
 );
 
 sequelize.authenticate()
